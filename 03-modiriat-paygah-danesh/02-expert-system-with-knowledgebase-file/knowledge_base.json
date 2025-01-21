@@ -1,0 +1,53 @@
+{
+    "rules": [
+      {
+        "question": "Does the car not start? ",
+        "conditions": [
+          {
+            "question": "Is the battery dead? ",
+            "expected_answer": "yes",
+            "problem": "The battery is dead.",
+            "solution": "Charge or replace the battery."
+          },
+          {
+            "question": "Is there a clicking sound? ",
+            "expected_answer": "yes",
+            "problem": "The starter is faulty.",
+            "solution": "Check or replace the starter."
+          }
+        ],
+        "default_solution": "Problem: Check the electrical system."
+      },
+      {
+        "question": "Does the car shake while driving? ",
+        "conditions": [
+          {
+            "question": "Are the tires damaged? ",
+            "expected_answer": "yes",
+            "problem": "The tires are damaged.",
+            "solution": "Replace the tires."
+          },
+          {
+            "question": "Is there an issue with the suspension? ",
+            "expected_answer": "yes",
+            "problem": "Suspension issue.",
+            "solution": "Check and repair the suspension system."
+          }
+        ],
+        "default_solution": "Problem: Check the alignment or suspension system."
+      },
+      {
+        "question": "Is the check engine light on? ",
+        "conditions": [
+          {
+            "question": "Is there enough fuel in the tank? ",
+            "expected_answer": "no",
+            "problem": "Insufficient fuel.",
+            "solution": "Fill the fuel tank."
+          }
+        ],
+        "default_solution": "Problem: Visit a mechanic to check the error code."
+      }
+    ]
+  }
+  
